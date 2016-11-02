@@ -2,7 +2,7 @@ body {
     background: #f3f3f3;
 }
 .wrapper {
-    width: 480px;
+    max-width: 480px;
     margin: auto;
 }
 .clearfix::after {
@@ -43,6 +43,7 @@ h3 {
 
 .head {
     height: 300px;
+    width: 100%;
     background: url(/img/head__bg.jpg) no-repeat 50% 50%;
     background-size: cover;
     display: flex;
@@ -57,12 +58,13 @@ h3 {
 
 .about {
     text-align: center;
+    margin: 100px 10px 0;
 }
 .about h2 {
-    margin: 100px 0 15px;
+    margin: 0 0 15px;
 }
 .about img[alt='aboutImg'] {
-    width: 260px;
+    width: 100%;
     height: 175px;
     margin: 0 0 15px 0;
 }
@@ -77,10 +79,10 @@ h3 {
 
 .works {
     text-align: center;
-    margin: 0 0 50px 0;
+    margin: 100px 10px 50px 10px;
 }
 .works h3 {
-    margin: 100px 0 25px 0;
+    margin: 0 0 25px 0;
 }
 .works li, .works a {
     color: #1a2531;
@@ -108,52 +110,104 @@ h3 {
 }
 .works__img {
     margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
 }
-.works__img img {
+.works__img img[alt="worksImg3"] {
+    height: 40%;
+}
+.works__img__left {
+    width: 50%;
+}
+.works__img__right {
+    width: 50%;
+}
+.works__img__left img, 
+.works__img__right img {
+    width: 95%;
     margin: 5px;
 }
-.works__img {
+
+
+.web__develp {
+    text-align: center;
     display: flex;
-    flex-flow: wrap column;
+    flex-direction: column;
 }
-.box__1 img[alt='worksImg1'] {
-    width: 230px;
-    height: 100px;
+.web__develp p {
+    color: #1a2531; 
+    font-family: "BaronNeue";
+    font-size: 12px;
+    margin-top: 3px;
 }
-.box__1 img[alt='worksImg2'] {
-    width: 230px;
-    height: 110px;
+.web__develp__icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
 }
-.box__1 img[alt='worksImg3'] {
-    width: 230px;
-    height: 180px;
-    float: right;
+.web__develp__box {
+    margin: 8px 5px;
 }
-.box__2 {
-    margin: -43px -238px 0 0;
+.web__develp__icons img {
+    height: 45px;
 }
-.box__2 img[alt='worksImg4'] {
-    width: 107px;
-    height: 95px;
+.img__web__develp {
+    width: 100%;
+    height: 300px;
+    background: url(/img/web__development__bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
 }
-.box__2 img[alt='worksImg5'] {
-    width: 107px;
-    height: 95px;
+
+
+.skills {
+    margin: 100px 10px 0;
 }
-.box__3 img[alt='worksImg6'] {
-    width: 230px;
-    height: 80px;
+.skills p {
+    color: #1a2531; 
+    font-family: "BaronNeue";
+    font-size: 14px;
+    margin-bottom: 15px;
 }
-.box__3 img[alt='worksImg7'] {
-    width: 230px;
-    height: 80px;
+.skills span {
+    margin-right: 10px;
 }
-.box__3 img[alt='worksImg8'] {
-    height: 238px;
-    width: 230px;
-    float: left;
-    margin-top: -60px;
+.skills__article {
+    text-align: center;
+    margin-bottom: 30px;
 }
+.design__rate,
+.css3__rate,
+.javascript__rate {
+    height: 14px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-bottom: 23px;
+    text-align: right;
+}
+.design__rate {
+    width: 95%;
+}
+.css3__rate {
+    width: 85%;
+}
+.javascript__rate {
+    width: 80%;
+}
+
+
+.telephone {
+    display: flex;
+    flex-direction: column;
+}
+.telephone__left__box,
+.telephone__right__box {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 
 

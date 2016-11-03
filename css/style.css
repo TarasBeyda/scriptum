@@ -12,12 +12,13 @@ body {
 }
 a {
     text-decoration: none;
-    
+    color: inherit;
 }
 .p__main {
     color: #6c6c6c;
     font-family: "Arial";
     font-size: 15px;
+    line-height: 1.5;
 }
 .learn__more {
     color: #1a2531;
@@ -38,6 +39,16 @@ h3 {
 /*    font-size: 38px;*/
     font-size: 21px;
     font-weight: bold;
+}
+.title {
+    color: #1a2531;
+    font-family: "BaronNeue";
+    font-size: 14px;    
+    font-weight: bold;
+}
+.article__center {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 
@@ -135,10 +146,7 @@ h3 {
     flex-direction: column;
 }
 .web__develp p {
-    color: #1a2531; 
-    font-family: "BaronNeue";
-    font-size: 12px;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 .web__develp__icons {
     width: 100%;
@@ -147,10 +155,10 @@ h3 {
     margin: 25px 0;
 }
 .web__develp__box {
-    margin: 8px 5px;
+    margin: 20px 0;
 }
 .web__develp__icons img {
-    height: 45px;
+    height: 50px;
 }
 .img__web__develp {
     width: 100%;
@@ -164,17 +172,10 @@ h3 {
     margin: 100px 10px 0;
 }
 .skills p {
-    color: #1a2531; 
-    font-family: "BaronNeue";
-    font-size: 14px;
     margin-bottom: 15px;
 }
 .skills span {
     margin-right: 10px;
-}
-.skills__article {
-    text-align: center;
-    margin-bottom: 30px;
 }
 .design__rate,
 .css3__rate,
@@ -201,21 +202,45 @@ h3 {
 .telephone {
     display: flex;
     flex-direction: column;
+    margin: 100px 10px 0;
 }
-.telephone__left__box,
-.telephone__right__box {
+.telephone p {
+    margin-left: 85px;
+}
+.telephone .box {
+    margin: 25px 0;
+}
+.telephone .box img {
+    float: left;
+    height: 65px;
+    margin: 0 20px 0 0;
+}
+.telephone__center__box {
+    text-align: center;
+}
+
+
+.news {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    margin: 100px 10px 0;
 }
-
-
-
-
-
-
-
-
-
+.news__box__datepost {
+    color: #6c6c6c;
+    font-family: "Arial";
+    font-size: 13px;
+}
+.news__box__text {
+    color: #6c6c6c;
+    font-family: "Arial";
+    font-size: 14px;
+}
+.news .news__box__datepost img {
+    margin: 0 8px 0 0;
+}
+.news__span {
+    margin-right: 30px;    
+}
 
 
 

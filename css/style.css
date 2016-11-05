@@ -343,8 +343,21 @@ h3 {
 }
 
 
-
-
+.footer {
+    margin: 100px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__scroll__top {
+    width: 44px;
+    height: 39px;
+    background: #1a2631;
+    color: #fff;
+    text-align: center;
+}
+.footer__scroll__top p {
+    padding: 12px 0;
+}
 
 
 

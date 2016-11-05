@@ -32,7 +32,7 @@ a {
     color: #1a2531;
     font-family: "BaronNeue";
     font-size: 13px;
-    font-weight: bold;
+/*    font-weight: bold;*/
 }
 h2 {
     color: #1a2531;
@@ -52,7 +52,7 @@ h3 {
     color: #1a2531;
     font-family: "BaronNeue";
     font-size: 14px;    
-    font-weight: bold;
+/*    font-weight: bold;*/
 }
 .article__center {
     text-align: center;
@@ -107,7 +107,7 @@ h3 {
     color: #1a2531;
     font-family: "BaronNeue";
     font-size: 12px;
-    font-weight: bold;
+/*    font-weight: bold;*/
 }
 .works li a:hover {
     border-bottom: 2px solid #1a2531;
@@ -118,7 +118,7 @@ h3 {
 }
 .works__nav ul li {
     margin: 0 12px;
-    padding: 0 1px;
+    padding: 0 1px 2px;
     float: left;
 }
 .works__nav ul li:first-child {
@@ -297,7 +297,7 @@ h3 {
     margin: 30px 0;
 }
 .east__north__navigation {
-    width: 24%;
+    width: 80px;
     margin: 0 auto;
 }
 .east__north__navigation span {
@@ -309,11 +309,14 @@ h3 {
 }
 .east__north__navigation span:first-child {
     background: #000;
-} 
+}
+.east__north__navigation span:last-child {
+    margin-right: 0px;
+}
 
 
 .contact__us {
-    margin: 70px 10px 0;
+    margin: 70px 40px 0;
 }
 .contact__us input, textarea {
     color: #c0c0c0;
@@ -351,6 +354,7 @@ h3 {
 .footer__scroll__top {
     width: 44px;
     height: 39px;
+    margin-top: 3px;
     background: #1a2631;
     color: #fff;
     text-align: center;
@@ -358,7 +362,18 @@ h3 {
 .footer__scroll__top p {
     padding: 12px 0;
 }
-
+.footer img {
+    margin-right: 17px;
+}
+.footer img[alt="twitter"],
+.footer img[alt="be"] {
+    margin-bottom: 2px;
+}
+.footer .p__main {
+    color: #5c5c5c;
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 
 

@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'BaronNeue';
+    src: url(/font/BaronNeue/Baron%20Neue.otf);
+}
+@font-face {
+    font-family: 'BaronNeueBold';
+    src: url(/font/BaronNeue/Baron%20Neue%20Bold.otf);
+}
 body {
     background: #f3f3f3;
 }
@@ -48,7 +56,7 @@ h3 {
 }
 .article__center {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -141,6 +149,7 @@ h3 {
 
 
 .web__develp {
+    margin: 70px 0 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -169,7 +178,7 @@ h3 {
 
 
 .skills {
-    margin: 100px 10px 0;
+    margin: 70px 10px 0;
 }
 .skills p {
     margin-bottom: 15px;
@@ -204,6 +213,9 @@ h3 {
     flex-direction: column;
     margin: 100px 10px 0;
 }
+.telephone .title {
+    margin-bottom: 6px;
+}
 .telephone p {
     margin-left: 85px;
 }
@@ -223,12 +235,20 @@ h3 {
 .news {
     display: flex;
     flex-direction: column;
-    margin: 100px 10px 0;
+    margin: 100px 28px 0;
+}
+.news__box {
+    margin: 0 0 20px 0;
+}
+.news .title {
+    font-weight: normal;
+    margin: 0 0 7px 0;
 }
 .news__box__datepost {
     color: #6c6c6c;
     font-family: "Arial";
     font-size: 13px;
+    margin: 10px 0;
 }
 .news__box__text {
     color: #6c6c6c;
@@ -241,6 +261,91 @@ h3 {
 .news__span {
     margin-right: 30px;    
 }
+.news .learn__more {
+    color: #979797;
+    margin: 16px 0 0 0;
+}
+.news__box img[alt="newsImg1"],
+.news__box img[alt="newsImg2"],
+.news__box img[alt="newsImg3"] {
+    width: 100%;
+}    
+
+
+.east__north {
+    margin: 80px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.east__north__img {
+    width: 100%;
+    height: 300px;
+    background: url(/img/east__north.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.east__morth__box {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.east__morth__box p {
+    color: #1a2531;
+    font-family: "Arial";
+    font-size: 21px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.east__north__navigation {
+    width: 24%;
+    margin: 0 auto;
+}
+.east__north__navigation span {
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-right: 16px;
+    background: #ddd;
+}
+.east__north__navigation span:first-child {
+    background: #000;
+} 
+
+
+.contact__us {
+    margin: 70px 10px 0;
+}
+.contact__us input, textarea {
+    color: #c0c0c0;
+    font-family: "BaronNeueBold";
+    font-size: 14px;
+}
+.contact__us input[type="text"],
+.contact__us textarea {
+    width: 97%;
+    float: left;
+    padding: 10px 0 10px 10px;
+    margin: 10px 0;
+    border: 0;
+    background: #efefef;
+}
+.contact__us input[type="button"] {
+    float: left;
+    background: none;
+    border: 0;
+}
+#contact__us__name {
+    margin-right: 10px;
+}
+#contact__us__name,
+#contact__us__surname {
+    width: 46%;
+}
+
+
+
+
+
 
 
 

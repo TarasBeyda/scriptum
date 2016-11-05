@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scriptum</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablets.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/desktops.css">
 </head>
 
 <body> 
@@ -17,12 +21,17 @@
             <img src="img/menu.png" alt="menu">
         </header>
         
-        <figure class="about">
-            <article class="article__center">
+        <figure class="about clearfix">
+            <article class="article__center about__article">
                 <h2>about scriptum</h2>
             </article>
-            <img src="img/about__img.jpg" alt="aboutImg">   
-            <figcaption>
+            <img src="img/about__img.jpg" alt="aboutImg">  
+<!--            tablets-->
+            <article class="about__article__tablets">
+                <h2>about scriptum</h2>
+            </article> 
+<!--            -->
+            <figcaption class="about__figcaption">
                 <p class="p__main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors.</p>
                 <p class="learn__more"><a href="#">learn more</a></p>
             </figcaption>
@@ -54,6 +63,22 @@
                     <img src="img/works__img_5.jpg" alt="worksImg5">
                     <img src="img/works__img_7.jpg" alt="worksImg7">
                 </div>
+<!--                tablets-->
+                <div class="works__img__first">
+                    <img src="img/works__img_1.jpg" alt="worksImg1">
+                    <img src="img/works__img_4.jpg" alt="worksImg4">
+                    <img src="img/works__img_6.jpg" alt="worksImg6">
+                </div>
+                <div class="works__img__center">
+                    <img src="img/works__img_2.jpg" alt="worksImg2">
+                    <img src="img/works__img_5.jpg" alt="worksImg5">
+                    <img src="img/works__img_7.jpg" alt="worksImg7">
+                </div>
+                <div class="works__img__last">
+                    <img src="img/works__img_3.jpg" alt="worksImg3">
+                    <img src="img/works__img_8.jpg" alt="worksImg8">
+                </div>
+<!--                -->
             </div>
         </div>
         
@@ -105,13 +130,13 @@
             <div class="javascript__rate"><span>80%</span></div>
         </div>
         
-        <div class="telephone">
+        <div class="telephone clearfix">
             <div class="box">
                 <img src="img/beautiful_photos_icon.svg" alt="beautifulPhotosIcon">
                 <p class="title">beautiful photo</p>
                 <p class="p__main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
             </div>
-            <div class="box">
+            <div class="box unmargin">
                 <img src="img/full_responsive_icon.svg" alt="fullResponsiveIcon">
                 <p class="title">full responsive</p>
                 <p class="p__main">Integer quis tortor metus. Aliquam et lacus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ut eros nibh</p>
@@ -124,7 +149,7 @@
                 <p class="title">retina ready</p>
                 <p class="p__main">Proin vitae quam mollis diam faucibus porta hendrerit vitae diam. Aenean cursus massa quis sem dictum convallis. Morbi ornare rutrum tellus, eu dapibus magna iaculis dictum. Nam nibh arcu.</p>
             </div>
-            <div class="box">
+            <div class="box unmargin">
                 <img src="img/crafted_on_coffescript.svg" alt="craftedOnCoffescript">
                 <p class="title">crafted on coffescript</p>
                 <p class="p__main">Sed a ipsum molestie, pellentesque felis at, vestibulum nunc. Aenean eu tristique elit. Vivamus ullamcorper id ante nec condimentum. In eleifend convallis ante in semper. Nam vitae com.</p>

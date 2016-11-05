@@ -1,0 +1,123 @@
+@media screen and (min-width: 481px) and (max-width: 667px) {
+    
+    .wrapper {
+        max-width: 667px;
+        margin: auto;
+    }
+
+    
+/*    About*/
+    .about img[alt='aboutImg'] {
+        float: left;
+        width: 50%;
+        margin: 0 10px 0 0;
+    }
+    .about__article {
+        display: none;
+    }
+    .about__article__tablets {
+        display: block;
+    }
+    
+    
+/*    Telephone*/
+    .telephone {
+        display: block;
+    }
+    .telephone .box {
+        width: 49%;
+        float: left;
+        margin-right: 5px;
+    }
+    .telephone .unmargin {
+        margin-right: 0;
+    }
+    .telephone__center__box{
+        width: 247px;
+        margin: auto;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 668px) and (max-width: 768px) {
+    
+    .wrapper {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    
+/*    About*/
+    .about img[alt='aboutImg'] {
+        float: left;
+        width: 50%;
+        margin: 0 10px 0 0;
+    }
+    .about__article {
+        display: none;
+    }
+    .about__article__tablets {
+        display: block;
+    }
+    .about__article__tablets h2 {
+        padding: 18px 0 15px;
+    }
+    
+    
+/*    Work*/
+    .works__img__left,
+    .works__img__right {
+        display: none;
+    }
+    .works__img__first,
+    .works__img__center,
+    .works__img__last {
+        display: block;
+        width: 32%;
+    }
+    .works__img img {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .works__img__first img {
+        margin-right: 5px;
+    }
+    .works__img__center img {
+        margin-right: 5px;
+    }
+    
+    
+/*    Web develp*/
+    .web__develp {
+        flex-direction: row;
+    }
+    .img__web__develp {
+        width: 50%;
+    }
+    .web__develp__icons {
+        width: 50%;
+        margin: 0;
+    }
+    
+    
+/*    Telephone*/
+    .telephone {
+        display: block;
+    }
+    .telephone .box {
+        width: 49%;
+        float: left;
+        margin-right: 5px;
+    }
+    .telephone .unmargin {
+        margin-right: 0;
+    }
+    .telephone__center__box{
+        width: 247px;
+        margin: auto;
+    }
+    
+}

@@ -92,7 +92,7 @@ h3 {
     text-align: right;
     margin: 10px 0 0 0;
 }
-.article__center__tablets {
+.about__article__tablets {
     display: none;
 }
 
@@ -250,7 +250,7 @@ h3 {
 }
 .news .title {
     font-weight: normal;
-    margin: 0 0 7px 0;
+    margin: 7px 0 7px 0;
 }
 .news__box__datepost {
     color: #6c6c6c;
@@ -278,6 +278,10 @@ h3 {
 .news__box img[alt="newsImg3"] {
     width: 100%;
 }    
+.news .writer {
+    display: inline;
+    margin-bottom: 7px;
+}
 
 
 .east__north {

@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scriptum</title>
+    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/481x767.css">
     <link rel="stylesheet" href="css/768x991.css">
-    <link rel="stylesheet" href="css/992x1200.css">
+    <link rel="stylesheet" href="css/992x1199.css">
+    <link rel="stylesheet" href="css/1200x.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body> 
 
-    <div class="wrapper">
+    <div class="wrapper" id="scrollTop">
        
         <header class="head">
             <img src="img/top__btn__S.png" alt="topBtnS">
@@ -131,28 +137,32 @@
         </div>
         
         <div class="telephone clearfix">
-            <div class="box">
-                <img src="img/beautiful_photos_icon.svg" alt="beautifulPhotosIcon">
-                <p class="title">beautiful photo</p>
-                <p class="p__main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
-            </div>
-            <div class="box unmargin">
-                <img src="img/full_responsive_icon.svg" alt="fullResponsiveIcon">
-                <p class="title">full responsive</p>
-                <p class="p__main">Integer quis tortor metus. Aliquam et lacus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ut eros nibh</p>
+            <div class="telephone__container__left">
+                <div class="box">
+                    <img src="img/beautiful_photos_icon.svg" alt="beautifulPhotosIcon">
+                    <p class="title">beautiful photo</p>
+                    <p class="p__main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
+                </div>
+                <div class="box unmargin">
+                    <img src="img/full_responsive_icon.svg" alt="fullResponsiveIcon">
+                    <p class="title">full responsive</p>
+                    <p class="p__main">Integer quis tortor metus. Aliquam et lacus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ut eros nibh</p>
+                </div>
             </div>
             <div class="telephone__center__box">
                 <img src="img/telephone__image.png" alt="telephoneImage">
             </div>
-            <div class="box">
-                <img src="img/retina_ready_icon.svg" alt="retinaReadyIcon">
-                <p class="title">retina ready</p>
-                <p class="p__main">Proin vitae quam mollis diam faucibus porta hendrerit vitae diam. Aenean cursus massa quis sem dictum convallis. Morbi ornare rutrum tellus, eu dapibus magna iaculis dictum. Nam nibh arcu.</p>
-            </div>
-            <div class="box unmargin">
-                <img src="img/crafted_on_coffescript.svg" alt="craftedOnCoffescript">
-                <p class="title">crafted on coffescript</p>
-                <p class="p__main">Sed a ipsum molestie, pellentesque felis at, vestibulum nunc. Aenean eu tristique elit. Vivamus ullamcorper id ante nec condimentum. In eleifend convallis ante in semper. Nam vitae com.</p>
+            <div class="telephone__container__right">
+                <div class="box">
+                    <img src="img/retina_ready_icon.svg" alt="retinaReadyIcon">
+                    <p class="title">retina ready</p>
+                    <p class="p__main">Proin vitae quam mollis diam faucibus porta hendrerit vitae diam. Aenean cursus massa quis sem dictum convallis. Morbi ornare rutrum tellus, eu dapibus magna iaculis dictum. Nam nibh arcu.</p>
+                </div>
+                <div class="box unmargin">
+                    <img src="img/crafted_on_coffescript.svg" alt="craftedOnCoffescript">
+                    <p class="title">crafted on coffescript</p>
+                    <p class="p__main">Sed a ipsum molestie, pellentesque felis at, vestibulum nunc. Aenean eu tristique elit. Vivamus ullamcorper id ante nec condimentum. In eleifend convallis ante in semper. Nam vitae com.</p>
+                </div>
             </div>
         </div>
         
@@ -220,12 +230,12 @@
                 <p class="p__main">Designed by Andrejs Hairulins - 2016&copy;</p>
             </div>
             <div class="footer__scroll__top">
-                <p><a href="#">&and;</a></p>
+                <p><a href="#scrollTop">&and;</a></p>
             </div>
         </footer>
         
     </div>
-
+    
 </body>
 
 </html>

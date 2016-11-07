@@ -204,15 +204,19 @@ h3 {
     padding: 10px 0;
     margin-bottom: 23px;
     text-align: right;
+    overflow: hidden;
 }
 .design__rate {
-    width: 95%;
+/*    width: 95%;*/
+    width: 0%;
 }
 .css3__rate {
-    width: 85%;
+/*    width: 85%;*/
+    width: 0%;
 }
 .javascript__rate {
-    width: 80%;
+/*    width: 80%;*/
+    width: 0%;
 }
 
 
@@ -385,4 +389,7 @@ h3 {
     color: #5c5c5c;
     font-size: 14px;
     margin-top: 5px;
+}
+.footer__scroll__top a {
+    padding: 11px 17px;
 }

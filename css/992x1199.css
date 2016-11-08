@@ -20,6 +20,18 @@
         width: 44px;
         height: 60px;
     }
+    .menu {
+        position: absolute;
+        right: -203.45px;
+        top: 93px;
+        color: #fbfbfb;
+        font-family: "BaronNeue";
+        border: 3px solid #6c6c6c;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border-right: 0px;
+        display: block;
+    }
 
     
 /*    About*/

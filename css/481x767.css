@@ -4,6 +4,24 @@
         max-width: 667px;
         margin: auto;
     }
+    
+    
+/*    Head*/
+    .menu {
+        position: absolute;
+        right: -203.45px;;
+        top: 102px;
+        color: #fbfbfb;
+        font-family: "BaronNeue";
+        border: 2px solid #6c6c6c;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border-right: 0px;
+        display: block;
+    }
+    .menu__nav li {
+        margin: 22px;
+    }
 
     
 /*    About*/
@@ -47,6 +65,25 @@
     .wrapper {
         max-width: 768px;
         margin: auto;
+    }
+    
+    
+/*    Head*/
+    .menu {
+        position: absolute;
+        right: -203.45px;;
+        top: 87px;
+        color: #fbfbfb;
+        font-family: "BaronNeue";
+        border: 2px solid #6c6c6c;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        border-right: 0px;
+        display: block;
+    }
+    .menu__nav li {
+        margin: 10px;
+        font-size: 14px;
     }
 
     

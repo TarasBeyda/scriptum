@@ -1,12 +1,49 @@
 $(document).ready(function(){
-    $('.footer__scroll__top a').on('click', function(event) {
+    
+    // навігація по сайті
+    function navigationScroll(element) {
+        $(element).on('click', function(event) {
         event.preventDefault();
         var id = $(this).attr('href');
         var top = $(id).offset().top;
         $('body, html').animate({
             scrollTop: top
         }, 1500);
+        });
+    };
+    navigationScroll('.footer__scroll__top a');
+    navigationScroll('.menu__nav__about a');
+    navigationScroll('.menu__nav__works a');
+    navigationScroll('.menu__nav__web a');
+    navigationScroll('.menu__nav__skills a');
+    navigationScroll('.menu__nav__news a');
+    navigationScroll('.menu__nav__quotes a');
+    navigationScroll('.menu__nav__contact a');
+    
+    // меню навігації по сайті
+    $('#img__menu').on('click', function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.menu').animate({
+            right: '0px'
+            }, 1000);
+        } else {
+            $('.menu').animate({
+            right: '-203.45px'
+            }, 1000);
+        }
+    });
+    $(document).click(function(e) { 
+        var menu = $('.menu'); 
+        var imgMenu = $('#img__menu');
+        if(e.target!=menu[0]&&!menu.has(e.target).length&&e.target!=imgMenu[0]&&!imgMenu.has(e.target).length&&imgMenu.hasClass('active')) { 
+            $('.menu').animate({
+            right: '-203.45px'
+            }, 1000);
+            $('#img__menu').removeClass();
+        } 
     }); 
+    
 });
 
 $(document).scroll(function(){
@@ -25,7 +62,7 @@ $(document).scroll(function(){
         $('.javascript__rate').animate({
             width: '80%'
         }, 3300, 'easeOutBounce');
-    } else
+    }
     if (a>b) {
         $('.design__rate').css('width', '0%');
         $('.css3__rate').css('width', '0%');

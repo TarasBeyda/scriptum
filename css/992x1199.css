@@ -32,7 +32,16 @@
         border-right: 0px;
         display: block;
     }
-
+    .menu__small {
+        display: none;
+    }
+    #img__menu {
+        display: block;
+    }
+    #img__menu__small {
+        display: none;
+    }
+    
     
 /*    About*/
     .about {

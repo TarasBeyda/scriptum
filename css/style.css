@@ -79,8 +79,30 @@ h3 {
     height: 40px;
     margin: 23px 26px;
 }
+#img__menu {
+    display: none;
+}
+#img__menu__small {
+    display: block;
+}
 .menu {
-
+    display: none;
+}
+.menu__small {            
+    height: 0%;
+    color: #1a2531;
+    font-family: "BaronNeue";
+    border: 0px solid #6c6c6c;
+    border-radius: 15px;
+    display: block;
+    background: rgba(222,222,234,0.8);
+    overflow: hidden;
+}
+.menu__small .menu__nav ul {
+    margin: 25% 0;
+}
+.menu__small .menu__nav li {
+    margin: 15px;
 }
 .menu__nav {
     text-align: center;

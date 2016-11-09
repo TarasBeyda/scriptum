@@ -44,28 +44,48 @@ $(document).ready(function(){
         } 
     }); 
     
+    $('#img__menu__small').on('click', function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.menu__small').animate({
+            height: '100%'
+            }, 1000);
+        } else {
+            $('.menu__small').animate({
+            height: '0%'
+            }, 1000);
+        }
+    });
+    $(document).click(function(e) { 
+        var menuSmall = $('.menu__small'); 
+        var imgMenuSmall = $('#img__menu__small');
+        if(e.target!=menuSmall[0]&&!menuSmall.has(e.target).length&&e.target!=imgMenuSmall[0]&&!imgMenuSmall.has(e.target).length&&imgMenuSmall.hasClass('active')) { 
+            $('.menu__small').animate({
+            height: '0%'
+            }, 1000)
+            $('#img__menu__small').removeClass();
+        } 
+    });
+    
+    // skills
+    $(document).scroll(function(){
+        var b = $('body').scrollTop()+900;
+        var a = $(".skills").offset().top;
+        console.log(a);
+        console.log(b);
+        if (a<b) {
+            $('.design__rate').animate({
+                width: '95%'
+            }, 2700, 'easeOutBounce');
+            $('.css3__rate').animate({
+                width: '85%'
+            }, 3000, 'easeOutBounce');
+            $('.javascript__rate').animate({
+                width: '80%'
+            }, 3300, 'easeOutBounce');
+        }
+    });
+    
+    
 });
 
-$(document).scroll(function(){
-    var b = $('body').scrollTop()+900;
-    var a = $(".skills").offset().top;
-    var c = $('.telephone').offset().top;
-    console.log(a);
-    console.log(b);
-    if (a<b) {
-        $('.design__rate').animate({
-            width: '95%'
-        }, 2700, 'easeOutBounce');
-        $('.css3__rate').animate({
-            width: '85%'
-        }, 3000, 'easeOutBounce');
-        $('.javascript__rate').animate({
-            width: '80%'
-        }, 3300, 'easeOutBounce');
-    }
-    if (a>b) {
-        $('.design__rate').css('width', '0%');
-        $('.css3__rate').css('width', '0%');
-        $('.javascript__rate').css('width', '0%');
-    }
-});

@@ -1,5 +1,7 @@
 $(document).ready(function(){
     
+    var browserMinWidth = parseInt($('.wrapper').css('min-width'), 10);
+    
     // навігація по сайті
     function navigationScroll(element) {
         $(element).on('click', function(event) {
@@ -23,14 +25,26 @@ $(document).ready(function(){
     // меню навігації по сайті
     $('#img__menu').on('click', function() {
         $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $('.menu').animate({
-            right: '0px'
-            }, 1000);
+        if (browserMinWidth >= 1850) {
+           if ($(this).hasClass('active')) {
+                $('.menu').animate({
+                right: '0px'
+                }, 1000);
+            } else {
+                $('.menu').animate({
+                right: '-351.45px'
+                }, 1000);
+            } 
         } else {
-            $('.menu').animate({
-            right: '-203.45px'
-            }, 1000);
+            if ($(this).hasClass('active')) {
+                $('.menu').animate({
+                right: '0px'
+                }, 1000);
+            } else {
+                $('.menu').animate({
+                right: '-203.45px'
+                }, 1000);
+            }
         }
     });
     $(document).click(function(e) { 
@@ -71,18 +85,30 @@ $(document).ready(function(){
     $(document).scroll(function(){
         var b = $('body').scrollTop()+900;
         var a = $(".skills").offset().top;
-        console.log(a);
-        console.log(b);
+//        console.log(a);
+//        console.log(b);
         if (a<b) {
-            $('.design__rate').animate({
-                width: '95%'
-            }, 2700, 'easeOutBounce');
-            $('.css3__rate').animate({
-                width: '85%'
-            }, 3000, 'easeOutBounce');
-            $('.javascript__rate').animate({
-                width: '80%'
-            }, 3300, 'easeOutBounce');
+            if (browserMinWidth >= 1850) {
+                $('.design__rate').animate({
+                    width: '1093px'
+                }, 2700, 'easeOutBounce');
+                $('.css3__rate').animate({
+                    width: '879px'
+                }, 3000, 'easeOutBounce');
+                $('.javascript__rate').animate({
+                    width: '818px'
+                }, 3300, 'easeOutBounce');
+            } else {
+                $('.design__rate').animate({
+                    width: '95%'
+                }, 2700, 'easeOutBounce');
+                $('.css3__rate').animate({
+                    width: '85%'
+                }, 3000, 'easeOutBounce');
+                $('.javascript__rate').animate({
+                    width: '80%'
+                }, 3300, 'easeOutBounce');
+            }
         }
     });
     

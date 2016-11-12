@@ -1,7 +1,7 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1850px) {
     
     .wrapper {
-        min-width: 1200px;
+        min-width: 1850px;
         max-width: 100%;
         margin: auto;
     }
@@ -15,19 +15,19 @@
     
 /*    Head*/
     .head {
-        height: 500px;
+        height: 1011px;
     }
     .head img[alt='topBtnS'], img[alt='menu'] {
-        width: 44px;
-        height: 60px;
+        width: 85px;
+        height: 118px;
     }
     .menu {
         position: absolute;
-        right: -203.45px;
-        top: 135px;
+        right: -351.45px;
+        top: 280px;
         color: #fbfbfb;
         font-family: "BaronNeue";
-        border: 4px solid #6c6c6c;
+        border: 8px solid #6c6c6c;
         border-bottom-left-radius: 25px;
         border-top-left-radius: 25px;
         border-right: 0px;
@@ -37,7 +37,11 @@
         display: none;
     }
     .menu__nav li {
-        margin: 22px;
+        margin: 30px;
+    }
+    .menu__nav li a {
+        text-shadow: 0 0 1em rgba(255,255,255,1);
+        font-size: 30px;
     }
     #img__menu {
         display: block;
@@ -50,12 +54,12 @@
 /*    About*/
     .about {
         margin: 168px auto 0;
-        width: 90%;
+        width: 1270px;
     }
     .about img[alt='aboutImg'] {
         float: left;
-        width: 50%;
-        height: 100%;
+        width: 681px;
+        height: 452px;
         margin: 0 47px 0 0;
     }
     .about__article {
@@ -63,16 +67,28 @@
     }
     .about__article__tablets {
         display: block;
+        text-align: left;
+    }
+    .about__article__tablets span {
+        margin-left: 18px;
     }
     .about__article__tablets h2 {
-        padding: 46px 0 36px;
+        padding: 46px 0 30px;
+    }
+    .about__figcaption .p__main {
+        word-spacing: 6px;
+    }
+    .about__figcaption .learn__more {
+        text-align: left;
+        margin: 45px 0 0 0; 
+        word-spacing: 11px;
     }
     
     
 /*    Work*/
     .works {
-        margin: 300px auto 10px;
-        width: 90%;
+        margin: 291px auto 50px;
+        width: 1270px;
     }
     .works__img__left,
     .works__img__right {
@@ -89,7 +105,7 @@
         justify-content: flex-start;
     }
     .works__img__first {
-        margin-right: 12px;
+        margin-right: 14px;
     }
     .works__img__first img:first-child,
     .works__img__center img:first-child,
@@ -102,52 +118,102 @@
         margin-bottom: 0;
     }
     .works__img__center {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 14px;
+        margin-right: 11px;
     }
     .works__img__last {
-        margin-left: 12px;
+        margin-left: 14px;
     }
     .works__img img {
-        width: 100%;
-        margin: 12px 0;
+        width: 410px;
+        margin: 9px 0;
     }
     .works__nav {
-        width: 252px;
+        width: 288px;
     }
-    .article__center {
-        margin-bottom: 56px;
+    .works__nav ul li {
+        margin: 0 15px;
+    }
+    .works .article__center {
+        margin-bottom: 54px;
     }
     .works a {
         padding-bottom: 7px;
     }
+    .works li, .works a {
+        font-size: 13px;
+    }    
     
     
 /*    Web develp*/
     .web__develp {
         flex-direction: row;
-        margin: 169px 0 0;
+        margin: 160px 0 0;
+        width: 1603px;
     }
     .img__web__develp {
-        width: 100%;
+        width: 1098px;
         height: 800px;
     }
     .web__develp__icons {
-        width: 50%;
         margin: auto;
+    }
+    .web__develp__icons img {
+        height: 83px;
+    }
+    .web__develp p {
+        margin-top: 16px;
+    }
+    .web__develp__icons__left {
+        margin-left: 242px;
+    }
+    .web__develp__icons__right {
+        margin-left: 219px
+    } .web__develp__icons__left, .web__develp__icons__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 576px;
+    }
+    .web__develp img[alt="communicationIcon"] {
+        height: 89px;
+    }
+    .web__develp img[alt="nightWorkIcon"] {
+        height: 75px;
+    }
+    .web__develp img[alt="designIcon"] {
+        height: 67px;
     }
     
     
 /*    Skills*/
     .skills {
-        margin: 169px auto 0;
-        width: 90%;
+        margin: 154px auto 0;
+        width: 1152px;
+    }
+    .skills span {
+        margin-right: 15px;
     }
     .article__center {
-        margin-bottom: 79px;
+        margin-bottom: 75px;
     }
     .skills p {
-        margin-bottom: 34px;
+        margin-bottom: 35px;
+        margin-left: -56px;
+    }
+    .design__rate {
+/*        width: 1093px;*/
+    }
+    .css3__rate {
+/*        width: 879px;*/
+    }
+    .javascript__rate {
+/*        width: 818px;*/
+    }
+    .design__rate, .css3__rate, .javascript__rate {
+        height: 12px;
+        margin-bottom: 48px;
+        margin-left: -55px;
     }
     
     
@@ -155,8 +221,9 @@
     .telephone {
         display: flex;
         flex-direction: row;
-        margin: 386px auto 0;
-        width: 90%;
+        margin: 312px auto 0;
+        width: 1148px;
+        word-spacing: 6px;
     }
     .telephone p {
         margin-left: 95px;
@@ -170,10 +237,9 @@
         margin-top: 0px;
     }
     .telephone .unmargin {
-        margin: 130px 0 0 0;
+        margin: 73px 0 0 0;
     }
-    .telephone__container__left,
-    .telephone__container__right
+    .telephone__container__left, .telephone__container__right
     {
         margin-top: 75px;
         width: 35%;
@@ -191,13 +257,27 @@
         margin-left: 0;
         margin-right: 95px;    
     }
+    .telephone .title {
+        margin-top: -3px;
+    }
+    .news__box__datepost {
+        margin: 13px 0;
+    }
+    .news .title {
+        margin: 13px 0 11px 0;
+        letter-spacing: 1.7px;
+    }
+    .news__box__text {
+        word-spacing: 6px;
+        line-height: 21px;
+    } 
     
     
 /*    News*/
     .news {
+        width: 1270px;
         flex-direction: none;
-        margin: 90px auto 0;
-        width: 90%;
+        margin: 270px auto 0;
     }
     .news__container__box {
         display: flex;
@@ -219,8 +299,21 @@
     .news__box img[alt="newsImg1"],
     .news__box img[alt="newsImg2"],
     .news__box img[alt="newsImg3"] {
-        height: 80%;
-    } 
+        height: 268px;
+        width: 408px;
+    }
+    .news .article__center {
+        margin-bottom: 77px
+    }
+    .news .learn__more {
+        letter-spacing: 2px;
+        margin: 30px 0 0 0;
+    }
+    .news__box__calendar,
+    .news__span {
+        margin-left: 5px;
+        letter-spacing: 3px;
+    }
     
     
 /*    East north*/
@@ -231,29 +324,57 @@
     .east__north__img {
         margin-bottom: 0;
         height: 800px;
+        width: 1641px;
     }
     .east__morth__box p {
-        margin: 97px 0 115px;
+        margin: 79px auto 112px;
         width: 581px;
+        word-spacing: 2px;
+        line-height: 35px;
+        letter-spacing: 2.6px;
+    }
+    .east__north img[alt="quotes"] {
+        margin-top: 15px;
+    }
+    .east__north__navigation {
+        width: 133px;
+    }
+    .east__north__navigation span {
+        margin-right: 32px;
     }
     
     
 /*    Contact us*/
     .contact__us {
-        margin: 167px auto 0;
-        width: 90%;
+        width: 964px;
+        margin: 157px auto 0;
+        letter-spacing: 2px;
     }
     .contact__us .article__center {
         margin-bottom: 121px;
     }
     #contact__us__name, #contact__us__surname {
-/*        width: 47.3%;*/
-        width: 47.1%;
+        width: 42%;
         margin-top: 0;
+        height: 66px;
+        padding: 0 0 0 37px;
+        margin-right: 79px;
+    }
+    #contact__us__surname {
+        margin-right: 0px;
     }
     .contact__us input[type="text"], .contact__us textarea {
         margin: 17px 0;
         padding: 20px 0 20px 20px;
+    }
+    .contact__us input[type="text"], .contact__us textarea {
+        height: 66px;
+        padding: 0 0 0 37px;
+        width: 96%;
+    }
+    .contact__us .contact__us__textarea{
+        padding-top: 30px;
+        height: 100px;
     }
     .contact__us input[type="button"] {
         margin-top: 45px;

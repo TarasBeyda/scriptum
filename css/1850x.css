@@ -2,7 +2,7 @@
     
     .wrapper {
         min-width: 1850px;
-        max-width: 100%;
+        max-width: 3500px;
         margin: auto;
     }
     h2 {
@@ -382,6 +382,10 @@
     
     
 /*    Footer*/
+    .footer {
+        width: 1270px;
+        margin: 100px auto 50px;
+    }
     .footer .p__main {
         margin-top: 5px;
     }

@@ -1,6 +1,7 @@
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     
     .wrapper {
+/*        min-width: 992px;*/
         max-width: 1199px;
         margin: auto;
     }

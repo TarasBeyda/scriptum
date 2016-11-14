@@ -67,7 +67,7 @@
     
 /*    Work*/
     .works {
-        margin: 300px 10px 50px 10px;
+        margin: 0 10px 50px 10px;
     }
     .works__img__left,
     .works__img__right {
@@ -247,6 +247,34 @@
     }
     .contact__us input[type="button"] {
         margin-top: 45px;
+    }
+    
+/*    East north*/
+    .east__morth__box {
+        overflow: hidden;
+        width: 100%;
+    }
+    .east__morth__slider {
+      margin-left: 0%;
+      width: 100%;
+
+      white-space: nowrap;
+      color: #8B4726;
+      text-align: center;
+
+      transition: margin-left 0.75s ease;
+    }
+    .slider__panel {
+      display: inline-block;
+      width: 100%;
+    }
+    .slider__item {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .east__north__navigation .tab-active {
+        background: #000;
     }
     
     

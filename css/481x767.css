@@ -51,6 +51,14 @@
     }
     
     
+/*    Works*/
+    .works {
+        text-align: center;
+        margin: 0px 10px 50px 10px;
+    }
+    
+    
+    
 /*    Telephone*/
     .telephone {
         display: block;
@@ -68,9 +76,36 @@
         margin: auto;
     }
     
+    
+/*        East north*/
+    .east__morth__box {
+        overflow: hidden;
+        width: 100%;
+    }
+    .east__morth__slider {
+      margin-left: 0%;
+      width: 100%;
+
+      white-space: nowrap;
+      color: #8B4726;
+      text-align: center;
+
+      transition: margin-left 0.75s ease;
+    }
+    .slider__panel {
+      display: inline-block;
+      width: 100%;
+    }
+    .slider__item {
+      width: 80%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .east__north__navigation .tab-active {
+        background: #000;
+    }
+    
 }
-
-
 
 
 @media screen and (min-width: 668px) and (max-width: 767px) {
@@ -127,6 +162,10 @@
     
     
 /*    Work*/
+    .works {
+        text-align: center;
+        margin: 0px 10px 50px     10px;
+    }
     .works__img__left,
     .works__img__right {
         display: none;
@@ -209,6 +248,32 @@
     }
     .east__north__img {
         margin-bottom: 0;
+    }
+    .east__morth__box {
+        overflow: hidden;
+        width: 100%;
+    }
+    .east__morth__slider {
+      margin-left: 0%;
+      width: 100%;
+
+      white-space: nowrap;
+      color: #8B4726;
+      text-align: center;
+
+      transition: margin-left 0.75s ease;
+    }
+    .slider__panel {
+      display: inline-block;
+      width: 100%;
+    }
+    .slider__item {
+      width: 80%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .east__north__navigation .tab-active {
+        background: #000;
     }
     
 }

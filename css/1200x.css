@@ -71,7 +71,7 @@
     
 /*    Work*/
     .works {
-        margin: 300px auto 10px;
+        margin: 0 auto 10px;
         width: 90%;
     }
     .works__img__left,
@@ -129,7 +129,7 @@
         margin: 169px 0 0;
     }
     .img__web__develp {
-        width: 100%;
+        width: 50%;
         height: 800px;
     }
     .web__develp__icons {
@@ -232,11 +232,43 @@
         margin-bottom: 0;
         height: 800px;
     }
-    .east__morth__box p {
-        margin: 97px 0 115px;
-        width: 581px;
+    .east__morth__box {
+        overflow: hidden;
+        width: 100%;
     }
-    
+    .east__morth__slider {
+/*      margin-left: 0%;*/
+      width: 100%;
+
+      white-space: nowrap;
+/*
+      color: #8B4726;
+      text-align: center;
+*/
+
+      transition: margin-left 0.75s ease;
+    }
+    .slider__panel {
+      display: inline-block;
+      width: 100%;
+    }
+    .slider__item {
+      width: 100%;
+/*
+      max-width: 520px;
+      margin: 0 auto;
+*/
+    }
+    .east__north__navigation .tab-active {
+        background: #000;
+    }
+    .w481 {
+        display: none;
+    }
+    .w1200 {
+        display: block;
+    }
+      
     
 /*    Contact us*/
     .contact__us {

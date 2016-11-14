@@ -71,6 +71,9 @@ h3 {
     background: url(/img/head__bg.jpg) no-repeat 50% 50%;
     background-size: cover;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
     justify-content: space-between;
     position: relative;
 }
@@ -141,7 +144,7 @@ h3 {
 
 .works {
     text-align: center;
-    margin: 100px 10px 50px 10px;
+    margin: 0px 10px 50px 10px;
 }
 .works h3 {
     margin: 0 0 25px 0;
@@ -343,7 +346,7 @@ h3 {
     margin-bottom: 30px;
 }
 .east__morth__box {
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
@@ -365,11 +368,36 @@ h3 {
     margin-right: 16px;
     background: #ddd;
 }
-.east__north__navigation span:first-child {
-    background: #000;
-}
 .east__north__navigation span:last-child {
     margin-right: 0px;
+}
+.east__morth__slider {
+/*  margin-left: 0%;*/
+  width: 100%;
+
+  white-space: nowrap;
+/*  color: #8B4726;*/
+/*  text-align: center;*/
+
+  transition: margin-left 0.75s ease;
+}
+.slider__panel {
+  display: inline-block;
+  width: 100%;
+}
+.slider__item {
+  width: 100%;
+/*  max-width: 520px;*/
+/*  margin: 0 auto;*/
+}
+.east__north__navigation .tab-active {
+    background: #000;
+}
+.w481 {
+    display: block;
+}
+.w1200 {
+    display: none;
 }
 
 

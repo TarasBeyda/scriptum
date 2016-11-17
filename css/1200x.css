@@ -299,5 +299,18 @@
     .footer .p__main {
         margin-top: 5px;
     }
+
+}
+
+@media screen and (min-width: 1200px) and (-ms-high-contrast:none) {
+    
+    *::-ms-backdrop, 
+    .web__develp__icons {
+        margin: 20% 0;
+    }
+    *::-ms-backdrop, 
+    .east__morth__box {
+        margin: 25% 0;
+    }
     
 }

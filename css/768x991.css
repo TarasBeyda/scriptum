@@ -170,5 +170,13 @@
     .east__north__navigation .tab-active {
         background: #000;
     }
+    .ie10 .east__north__img,
+    .ie10 .east__morth__box {
+        float: right;
+        width: 50%;
+    }
+    .ie10 .east__morth__box {
+        margin: 3% 0;
+    }
     
 }

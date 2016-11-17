@@ -137,6 +137,9 @@
         width: 50%;
         margin: auto;
     }
+    .ie10 .web__develp__icons {
+        margin: 20% 0;
+    }
     
     
 /*    Skills*/
@@ -221,7 +224,10 @@
     .news__box img[alt="newsImg2"],
     .news__box img[alt="newsImg3"] {
         height: 80%;
-    } 
+    }
+    .ie10 .news__box {
+        width: 30%;
+    }
     
     
 /*    East north*/
@@ -238,15 +244,8 @@
         width: 100%;
     }
     .east__morth__slider {
-/*      margin-left: 0%;*/
       width: 100%;
-
       white-space: nowrap;
-/*
-      color: #8B4726;
-      text-align: center;
-*/
-
       transition: margin-left 0.75s ease;
     }
     .slider__panel {
@@ -255,10 +254,6 @@
     }
     .slider__item {
       width: 100%;
-/*
-      max-width: 520px;
-      margin: 0 auto;
-*/
     }
     .east__north__navigation .tab-active {
         background: #000;
@@ -268,6 +263,14 @@
     }
     .w1200 {
         display: block;
+    }
+    .ie10 .east__north__img,
+    .ie10 .east__morth__box {
+        float: right;
+        width: 50%;
+    }
+    .ie10 .east__morth__box {
+        margin: 25% 0;
     }
       
     
@@ -280,7 +283,6 @@
         margin-bottom: 121px;
     }
     #contact__us__name, #contact__us__surname {
-/*        width: 47.3%;*/
         width: 47.1%;
         margin-top: 0;
     }

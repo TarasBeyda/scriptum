@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'BaronNeue';
-    src: url(/font/BaronNeue/Baron%20Neue.otf);
+    src: url(/font/BaronNeue/Baron%20Neue.otf), url(/font/BaronNeue/baron_neue-webfont.woff), url(/font/BaronNeue/Baron%20Neue.eot);
 }
 @font-face {
     font-family: 'BaronNeueBold';
-    src: url(/font/BaronNeue/Baron%20Neue%20Bold.otf);
+    src: url(/font/BaronNeue/Baron%20Neue%20Bold.otf), url(/font/BaronNeue/baron_neue_bold-webfont.woff), url(/font/BaronNeue/Baron%20Neue%20Bold.eot);
 }
 body {
     background: #f3f3f3;
@@ -58,22 +58,14 @@ h3 {
     margin-bottom: 50px;
 }
 
-
-.menu__top {
-    width: 100%;
-    height: 0px;
-}
-
-
 .head {
     height: 300px;
     width: 100%;
     background: url(/img/head__bg.jpg) no-repeat 50% 50%;
     background-size: cover;
-    display: flex;
     display: -webkit-flex;
-    display: -ms-flexbox;
-    -ms-flex-direction: row;
+    display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     position: relative;
 }

@@ -99,7 +99,7 @@ $(document).ready(function(){
     $(document).scroll(function(){
         
         var windowHeight = $(window).height();
-        var bodyScroll = $('body').scrollTop()+windowHeight;
+        var bodyScroll = $('html,body').scrollTop()+windowHeight;
         var skillsOffset = $(".skills").offset().top;
         
         if (bodyScroll >= skillsOffset) {
@@ -181,13 +181,13 @@ $(document).ready(function(){
     
     $('.east__north__navigation span:first-child').addClass('tab-active');
     
-//    setInterval(function(){
-//        margin -= 100;
-//            if (margin/100 < 1 - count) {
-//                margin = 0;
-//            }
-//        update();
-//    },3300); 
+    setInterval(function(){
+        margin -= 100;
+            if (margin/100 < 1 - count) {
+                margin = 0;
+            }
+        update();
+    },3300); 
 
     $('.east__north__navigation span').toArray().forEach(function(element, index, array) {
         (function() {

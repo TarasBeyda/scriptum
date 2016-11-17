@@ -16,6 +16,7 @@
 /*    Head*/
     .head {
         height: 400px;
+        width: 100%;
     }
     .head img[alt='topBtnS'], img[alt='menu'] {
         width: 44px;

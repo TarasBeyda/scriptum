@@ -32,6 +32,9 @@
     #img__menu__small {
         display: none;
     }
+    .head {
+        width: 100%;
+    }
 
     
 /*    About*/

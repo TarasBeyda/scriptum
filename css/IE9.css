@@ -1,0 +1,123 @@
+.head img[alt='topBtnS'] {
+    position: absolute;
+}
+.head img[alt='menu'] {
+    position: absolute;
+    right: 0px;
+}
+.works__img__first,
+.works__img__center,
+.works__img__last {
+    float: left;
+    width: 31%;
+    margin: 0 7px;
+}
+.works__img__left,
+.works__img__right {
+    float: left;
+    width: 50%;
+}
+.img__web__develp,
+.web__develp__icons {
+    float: left;
+    width: 100%;
+}
+.web__develp__icons__left,
+.web__develp__icons__right {
+    float: left;
+    width: 50%;
+    margin: 0 0;
+}
+.telephone__container__left,
+.telephone__center__box,
+.telephone__container__right {
+    float: left;
+    width: 100%;
+}
+.news__box {
+    float: left;
+    width: 100%;
+}
+.east__north__img,
+.east__morth__box {
+    width: 100%;
+}
+.east__morth__box {
+    margin: 0 0;
+}
+.footer {
+    position: relative;
+    height: 100px;
+}
+.footer__designed__by {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footer__scroll__top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (min-width: 668px) {
+    
+    .news__box {
+        width: 32%;
+    }
+    .east__north__img,
+    .east__morth__box {
+        width: 50%;
+    }
+    .east__north__img {
+        float: right;
+    }
+    east__morth__slider {
+        margin: 50% 0;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .img__web__develp,
+    .web__develp__icons {
+        float: left;
+        width: 50%;
+    }
+    .web__develp__icons__left,
+    .web__develp__icons__right {
+        float: left;
+        width: 50%;
+        margin: 20% 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .news__box {
+        width: 31%;
+    }
+    .telephone__container__left,
+    .telephone__center__box,
+    .telephone__container__right {
+        width: 33%;
+    } 
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+    .news__box {
+        width: 31%;
+    }
+    .telephone__container__left,
+    .telephone__center__box,
+    .telephone__container__right {
+        width: 33%;
+    }
+    .web__develp__icons__left,
+    .web__develp__icons__right {
+        margin: 35% 0;
+    }
+    
+}

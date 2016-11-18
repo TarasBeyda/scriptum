@@ -5,7 +5,7 @@ module.exports = function (grunt) {
                 separator: ';'
             }
             , dist: {
-                src: ['css/*.css', '!ie.css', '!main.css']
+                src: ['css/*.css', '!ie.css', '!main.css', '!*.min.css']
                 , dest: 'css/main.css'
             }
         }

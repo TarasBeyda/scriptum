@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scriptum</title>
     
-    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/481x767.css">
     <link rel="stylesheet" href="css/768x991.css">
@@ -17,7 +17,7 @@
 <!--    <link rel="stylesheet" href="css/main.min.css">-->
     
     <!--[if IE 9]>
-        <link rel="stylesheet" href="css/ie/IE9.css">
+        <link rel="stylesheet" href="css/IE9.css">
     <![endif]-->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -153,7 +153,9 @@
         
         <div class="web__develp clearfix" id="web">
             <section class="img__web__develp">
-                
+                <div class="img__web__develp__text">
+                    <p>web development</p>
+                </div>
             </section>
             <section class="web__develp__icons">
                 <div class="web__develp__icons__left">
@@ -286,7 +288,9 @@
         
         <div class="east__north clearfix" id="quotes">
             <section class="east__north__img">
-                
+                <div class="east__north__text">
+                    <p>quotes from <br> east north <br> clients</p>
+                </div>
             </section>
             <div class="east__morth__box">
                 <img src="img/quotes.png" alt="quotes">
@@ -352,11 +356,13 @@
             <article class="article__center">
                 <h2>contact us</h2>
             </article>
-            <input type="text" placeholder="*name" id="contact__us__name">
-            <input type="text" placeholder="*surname" id="contact__us__surname">
-            <input type="text" placeholder="*email">
-            <textarea cols="40" rows="10" placeholder="message" class=contact__us__textarea></textarea>
-            <input type="button" value="send">
+            <form action="#">
+                <input type="text" placeholder="*name" id="contact__us__name">
+                <input type="text" placeholder="*surname" id="contact__us__surname">
+                <input type="text" placeholder="*email">
+                <textarea cols="40" rows="10" placeholder="message" class=contact__us__textarea></textarea>
+                <input type="button" value="send">
+            </form>
         </section>
         
         <footer class="footer">

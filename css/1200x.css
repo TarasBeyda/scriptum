@@ -129,9 +129,29 @@
         flex-direction: row;
         margin: 169px 0 0;
     }
+    .img__web__develp__text {
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+        background: url(/img/alfa.png) no-repeat 50% 50%;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img__web__develp__text p {
+        font-size: 50px;
+        font-family: 'BaronNeue';
+        color: #FFF;
+        display: block;
+        margin-top: -10px;
+    }
     .img__web__develp {
         width: 50%;
         height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .web__develp__icons {
         width: 50%;
@@ -159,9 +179,9 @@
     .telephone {
         display: flex;
         flex-direction: row;
-        margin: 386px auto 0;
+        margin: 300px auto 0;
         width: 90%;
-    }
+    }  
     .telephone p {
         margin-left: 95px;
     }
@@ -257,6 +277,24 @@
     }
     .east__north__navigation .tab-active {
         background: #000;
+    }
+    .east__north__text {
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+        background: url(/img/beta.png) no-repeat 50% 50%;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .east__north__text p {
+        font-size: 50px;
+        font-family: 'BaronNeue';
+        color: #FFF;
+        display: block;
+        line-height: 1.3;
     }
     .w481 {
         display: none;

@@ -152,6 +152,26 @@
         margin: 160px 0 0;
         width: 1603px;
     }
+    .web__develp p {
+        margin-top: 16px;
+    }
+    .img__web__develp__text {
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+        background: url(/img/alfa.png) no-repeat 50% 50%;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img__web__develp__text p {
+        font-size: 65px;
+        font-family: 'BaronNeue';
+        color: #FFF;
+        display: block;
+        margin-top: -12px;
+    }
     .img__web__develp {
         width: 1098px;
         height: 800px;
@@ -161,9 +181,6 @@
     }
     .web__develp__icons img {
         height: 83px;
-    }
-    .web__develp p {
-        margin-top: 16px;
     }
     .web__develp__icons__left {
         margin-left: 242px;
@@ -342,6 +359,24 @@
     }
     .east__north__navigation span {
         margin-right: 32px;
+    }
+    .east__north__text {
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+        background: url(/img/beta.png) no-repeat 50% 50%;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .east__north__text p {
+        font-size: 65px;
+        font-family: 'BaronNeue';
+        color: #FFF;
+        display: block;
+        line-height: 1.5;
     }
     
     

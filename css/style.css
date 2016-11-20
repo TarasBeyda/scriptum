@@ -200,6 +200,23 @@ h3 {
 .web__develp p {
     margin-top: 10px;
 }
+.img__web__develp__text {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    background: url(/img/alfa.png) no-repeat 50% 50%;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__web__develp__text p {
+    font-size: 22px;
+    font-family: 'BaronNeue';
+    color: #FFF;
+    display: block;
+    margin-top: -7px;
+}
 .web__develp__icons {
     width: 100%;
     display: flex;
@@ -242,15 +259,12 @@ h3 {
     overflow: hidden;
 }
 .design__rate {
-/*    width: 95%;*/
     width: 0%;
 }
 .css3__rate {
-/*    width: 85%;*/
     width: 0%;
 }
 .javascript__rate {
-/*    width: 80%;*/
     width: 0%;
 }
 
@@ -362,13 +376,8 @@ h3 {
     margin-right: 0px;
 }
 .east__morth__slider {
-/*  margin-left: 0%;*/
   width: 100%;
-
   white-space: nowrap;
-/*  color: #8B4726;*/
-/*  text-align: center;*/
-
   transition: margin-left 0.75s ease;
 }
 .slider__panel {
@@ -377,11 +386,27 @@ h3 {
 }
 .slider__item {
   width: 100%;
-/*  max-width: 520px;*/
-/*  margin: 0 auto;*/
 }
 .east__north__navigation .tab-active {
     background: #000;
+}
+.east__north__text {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    background: url(/img/beta.png) no-repeat 50% 50%;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.east__north__text p {
+    font-size: 22px;
+    font-family: 'BaronNeue';
+    color: #FFF;
+    display: block;
+    line-height: 1.5;
 }
 .w481 {
     display: block;

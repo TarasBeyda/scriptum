@@ -99,10 +99,11 @@ $(document).ready(function(){
     $(document).scroll(function(){
         
         var windowHeight = $(window).height();
-        var bodyScroll = $('html,body').scrollTop()+windowHeight;
+        var bodyScroll = $('body').scrollTop()+windowHeight;
+        var HtmlScroll = $('html').scrollTop()+windowHeight;
         var skillsOffset = $(".skills").offset().top;
         
-        if (bodyScroll >= skillsOffset) {
+        if (bodyScroll >= skillsOffset || HtmlScroll >= skillsOffset) {
             if (browserMinWidth >= 1850) {
                 $('.design__rate').animate({
                     width: '1093px'

@@ -46,11 +46,15 @@
     #img__menu__small {
         display: none;
     }
+    .fixed {
+        top: 500px;
+    }
 
     
 /*    About*/
     .about {
-        margin: 168px auto 0;
+/*        margin: 168px auto 0;*/
+        margin: 668px auto 0;
         width: 90%;
     }
     .about img[alt='aboutImg'] {
@@ -72,7 +76,7 @@
     
 /*    Work*/
     .works {
-        margin: 0 auto 10px;
+        margin: 300px auto 10px;
         width: 90%;
     }
     .works__img__left,

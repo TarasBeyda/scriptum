@@ -60,10 +60,17 @@ $(document).ready(function(){
         var menu = $('.menu'); 
         var imgMenu = $('#img__menu');
         if(e.target!=menu[0]&&!menu.has(e.target).length&&e.target!=imgMenu[0]&&!imgMenu.has(e.target).length&&imgMenu.hasClass('active')) { 
-            $('.menu').animate({
-            right: '-203.45px'
-            }, 1000);
-            $('#img__menu').removeClass();
+            if (browserMinWidth >= 1850) {
+                $('.menu').animate({
+                    right: '-351.45px'
+                }, 1000);
+                $('#img__menu').removeClass();
+            } else {
+                $('.menu').animate({
+                    right: '-203.45px'
+                }, 1000);
+                $('#img__menu').removeClass();
+            }
         }
         
     }); 
@@ -135,43 +142,61 @@ $(document).ready(function(){
     // parallax
     $(window).scroll(function() {
     
-        var st = $(this).scrollTop();
-
-        function paralaxPlus(block, value) {
-            $(block).css({
-                transform: 'translate(0%, ' + value + '%'
-            });
-        };
-        function paralaxMinus(block, value) {
-            $(block).css({
-                transform: 'translate(0%, -' + value + '%'
-            });
-        };
-
-        if (browserMaxWidth <= 3500) {
-            paralaxPlus('.head img', st/2);
-            paralaxMinus('.about', st/40);
-        }
-        if (browserMaxWidth <= 1849) {
-            paralaxPlus('.head img', st*1.2);
-            paralaxMinus('.about', st/15);
-        }
+        // паралакс №1
+//        var st = $(this).scrollTop();
+//
+//        function paralaxPlus(block, value) {
+//            $(block).css({
+//                transform: 'translate(0%, ' + value + '%'
+//            });
+//        };
+//        function paralaxMinus(block, value) {
+//            $(block).css({
+//                transform: 'translate(0%, -' + value + '%'
+//            });
+//        };
+//
+//        if (browserMaxWidth <= 3500) {
+//            paralaxPlus('.head img', st/2);
+//            paralaxMinus('.about', st/40);
+//        }
+//        if (browserMaxWidth <= 1849) {
+//            paralaxPlus('.head img', st*1.2);
+//            paralaxMinus('.about', st/15);
+//        }
+//        if (browserMaxWidth <= 1199) {
+//            paralaxPlus('.head img', st*1.2);
+//            paralaxMinus('.about', st/15);
+//        }
+//        if (browserMaxWidth <= 992) {
+//            paralaxPlus('.head img', st*1);
+//            paralaxMinus('.about', st/15);
+//        }
+//        if (browserMaxWidth <= 667) {
+//            paralaxPlus('.head img', st*1.2);
+//            paralaxMinus('.about', st/15);
+//        }
+//        if (browserMaxWidth <= 480) {
+//            paralaxPlus('.head img', st*1.2);
+//            paralaxMinus('.about', st/40);
+//        }
+        
+        // паралакс №2
+        var wrapperHeight = parseInt($('.wrapper').css('height')); 
+        if (browserMaxWidth <= 991) {
+            $('.fixed').css({'height': wrapperHeight-299 + 'px'});
+        }        
         if (browserMaxWidth <= 1199) {
-            paralaxPlus('.head img', st*1.2);
-            paralaxMinus('.about', st/15);
+            $('.fixed').css({'height': wrapperHeight-399 + 'px'});
+        }        
+        if (browserMaxWidth <= 1849) {
+            $('.fixed').css({'height': wrapperHeight-499 + 'px'});
+        }       
+        if (browserMaxWidth <= 3500) {
+            $('.fixed').css({'height': wrapperHeight-1010 + 'px'});
         }
-        if (browserMaxWidth <= 992) {
-            paralaxPlus('.head img', st*1);
-            paralaxMinus('.about', st/15);
-        }
-        if (browserMaxWidth <= 667) {
-            paralaxPlus('.head img', st*1.2);
-            paralaxMinus('.about', st/15);
-        }
-        if (browserMaxWidth <= 480) {
-            paralaxPlus('.head img', st*1.2);
-            paralaxMinus('.about', st/40);
-        }
+//        $('.fixed').css({'height': wrapperHeight-499 + 'px'});
+        $('.head').css({'top': -$(window).scrollTop()/3})
 
     });
     
@@ -228,4 +253,3 @@ $(document).ready(function(){
     })
       
 });
-

@@ -35,9 +35,11 @@
     #img__menu__small {
         display: block;
     }
+/*
     .head {
         width: 100%;
     }
+*/
 
     
 /*    About*/
@@ -57,7 +59,7 @@
 /*    Works*/
     .works {
         text-align: center;
-        margin: 0px 10px 50px 10px;
+        margin: 100px 10px 50px 10px;
     }
     
     
@@ -206,7 +208,7 @@
 /*    Work*/
     .works {
         text-align: center;
-        margin: 0px 10px 50px     10px;
+        margin: 100px 10px 50px 10px;
     }
     .works__img__left,
     .works__img__right {

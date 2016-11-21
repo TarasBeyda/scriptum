@@ -6,6 +6,9 @@
     font-family: 'BaronNeueBold';
     src: url(/font/BaronNeue/Baron%20Neue%20Bold.otf), url(/font/BaronNeue/baron_neue_bold-webfont.woff), url(/font/BaronNeue/Baron%20Neue%20Bold.eot);
 }
+
+
+/* all */
 body {
     background: #f3f3f3;
 }
@@ -56,6 +59,7 @@ h3 {
     margin-bottom: 50px;
 }
 
+/* Head */
 .head {
     height: 300px;
     width: 100%;
@@ -106,8 +110,28 @@ h3 {
 .menu__nav li a {   
     text-shadow: 0 0 1em rgba(255,255,255,1);
 }
+.ie10 #img__menu {
+    position: absolute;
+    right: 0;
+}
+@-moz-document url-prefix() {
+    #img__menu {
+        position: absolute;
+        right: 0;
+    }
+}
+@media screen and (-ms-high-contrast:none) {
+    
+    *::-ms-backdrop, 
+    #img__menu {
+        position: absolute;
+        right: 0;
+    }
+    
+}
 
 
+/* About */
 .about {
     text-align: center;
     margin: 100px 10px 0;
@@ -132,6 +156,7 @@ h3 {
 }
 
 
+/* Work */
 .works {
     text-align: center;
     margin: 0px 10px 50px 10px;
@@ -191,6 +216,7 @@ h3 {
 }
 
 
+/*Web develp*/
 .web__develp {
     margin: 70px 0 0;
     text-align: center;
@@ -237,6 +263,7 @@ h3 {
 }
 
 
+/* Skills */
 .skills {
     margin: 70px 10px 0;
 }
@@ -269,6 +296,7 @@ h3 {
 }
 
 
+/* Telephone */
 .telephone {
     display: flex;
     flex-direction: column;
@@ -293,6 +321,7 @@ h3 {
 }
 
 
+/*News*/
 .news {
     display: flex;
     flex-direction: column;
@@ -337,6 +366,7 @@ h3 {
 }
 
 
+/*East north*/
 .east__north {
     margin: 80px 0 0;
     display: flex;
@@ -416,6 +446,7 @@ h3 {
 }
 
 
+/* Contact us*/
 .contact__us {
     margin: 70px 40px 0;
 }
@@ -447,6 +478,7 @@ h3 {
 }
 
 
+/* Footer */
 .footer {
     margin: 100px 10px 50px;
     display: flex;

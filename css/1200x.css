@@ -149,9 +149,6 @@
     .img__web__develp {
         width: 50%;
         height: 800px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .web__develp__icons {
         width: 50%;

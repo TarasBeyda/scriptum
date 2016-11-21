@@ -202,6 +202,9 @@
     .web__develp img[alt="designIcon"] {
         height: 67px;
     }
+    .ie10 .web__develp__icons {
+        margin: 7% 0;
+    }
     
     
 /*    Skills*/
@@ -378,6 +381,9 @@
         display: block;
         line-height: 1.5;
     }
+    .ie10 .east__morth__box {
+        margin: 10% 0;
+    }
     
     
 /*    Contact us*/
@@ -424,6 +430,19 @@
     }
     .footer .p__main {
         margin-top: 5px;
+    }
+    
+}
+
+@media screen and (min-width: 1850px) and (-ms-high-contrast:none) {
+    
+    *::-ms-backdrop, 
+    .web__develp .web__develp__icons {
+        margin: 7% 0;
+    }
+    *::-ms-backdrop, 
+    .east__morth__box {
+        margin: 10% 0;
     }
     
 }

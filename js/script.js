@@ -26,6 +26,7 @@ $(document).ready(function(){
     navigationScroll('.menu__nav__quotes a');
     navigationScroll('.menu__nav__contact a');
     
+    
     // меню навігації по сайті
     $('#img__menu').on('click', function() {
         
@@ -95,6 +96,7 @@ $(document).ready(function(){
         
     });
     
+    
     // skills
     $(document).scroll(function(){
         
@@ -128,6 +130,7 @@ $(document).ready(function(){
         }
         
     });
+    
     
     // parallax
     $(window).scroll(function() {
@@ -188,7 +191,7 @@ $(document).ready(function(){
                 margin = 0;
             }
         update();
-    },3300); 
+    },2500); 
 
     $('.east__north__navigation span').toArray().forEach(function(element, index, array) {
         (function() {
@@ -204,6 +207,25 @@ $(document).ready(function(){
         $('.east__north__navigation span').removeClass('tab-active');  
         $('.east__north__navigation span:nth-child(' + (Math.abs(margin/100) + 1) + ')').addClass('tab-active');
     }
+    
+    
+    // анімація картинок в блоці work
+    $('.works__img img').mouseover(function() {
+        $(this).stop(true).queue('fx', function() {
+            $(this).animate({
+                'padding': '20px 0',
+            })
+            .dequeue('fx');
+        })
+    })    
+    $('.works__img img').mouseout(function() {
+        $(this).stop(true).queue('fx', function() {
+            $(this).animate({
+                'padding': '0 0',
+            })
+            .dequeue('fx');
+        })
+    })
       
 });
 

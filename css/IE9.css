@@ -5,6 +5,8 @@
     position: absolute;
     right: 0px;
 }
+
+
 .works__img__first,
 .works__img__center,
 .works__img__last {
@@ -17,6 +19,8 @@
     float: left;
     width: 50%;
 }
+
+
 .img__web__develp,
 .web__develp__icons {
     float: left;
@@ -28,16 +32,28 @@
     width: 50%;
     margin: 0 0;
 }
+.img__web__develp__text {
+    display: none;
+}
+.img__web__develp__text p {
+    display: none;
+}
+
+
 .telephone__container__left,
 .telephone__center__box,
 .telephone__container__right {
     float: left;
     width: 100%;
 }
+
+
 .news__box {
     float: left;
     width: 100%;
 }
+
+
 .east__north__img,
 .east__morth__box {
     width: 100%;
@@ -45,6 +61,8 @@
 .east__morth__box {
     margin: 0 0;
 }
+
+
 .footer {
     position: relative;
     height: 100px;
@@ -59,6 +77,7 @@
     right: 0;
     bottom: 0;
 }
+
 
 @media screen and (min-width: 668px) {
     
@@ -121,3 +140,4 @@
     }
     
 }
+
